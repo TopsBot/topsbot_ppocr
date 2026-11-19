@@ -1,0 +1,7 @@
+<library path="topsbot_ppocr_backend">
+  <class name="ppocr"
+         type="topsbot_ppocr::PPOCRBackend"
+         base_class_type="topsbot_ai_infer::IInferenceBackend">
+    <description>PP-OCR two-stage text detection and recognition with CPU preprocessing.</description>
+  </class>
+</library>

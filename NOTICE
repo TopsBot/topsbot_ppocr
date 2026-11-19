@@ -1,0 +1,13 @@
+topsbot_ppocr
+Copyright 2026 TOPSBOT contributors
+
+This product includes PP-OCR (DB text detection + CRNN/CTC recognition) inference backend for TOPSBOT MES20 boards.
+
+Implementation references the PaddleOCR sample pipelines for preprocessing, postprocessing,
+and runtime usage (det_db / rec_ctc).
+
+PP-OCR model files (.nb) are not distributed with this repository; see scripts/download_models.sh
+and config/models_manifest.yaml.
+
+Original PP-OCR models are developed by PaddlePaddle and released under the Apache License 2.0.
+See https://github.com/PaddlePaddle/PaddleOCR for details.

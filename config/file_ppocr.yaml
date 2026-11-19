@@ -1,0 +1,29 @@
+/**:
+  ros__parameters:
+    output_image_file: /tmp/topsbot_ai_infer/out_ppocr.jpg
+    enable_profile: true
+
+    model.backend: ppocr
+    model.name: ppocr
+    model.type: ppocr
+    device_id: 0
+
+    # PP-OCR two-stage model paths and dictionary
+    ppocr.det_model_path: ~/topsbot/models/ppocr_det_int16.nb
+    ppocr.rec_model_path: ~/topsbot/models/ppocr_rec_float16.nb
+    ppocr.dict_path: ~/topsbot/dataset/ppocr/ppocr_keys_v1.txt
+
+    # Detector (DB) input size and thresholds
+    ppocr.det_input_width: 480
+    ppocr.det_input_height: 480
+    ppocr.det_db_thresh: 0.3
+    ppocr.det_db_box_thresh: 0.6
+    ppocr.det_db_unclip_ratio: 1.5
+    ppocr.det_use_polygon_score: false
+
+    # Recognizer (CRNN/CTC) input size and thresholds
+    ppocr.rec_input_width: 320
+    ppocr.rec_input_height: 48
+    ppocr.rec_thresh: 0.5
+    ppocr.use_beam_search: true
+    ppocr.beam_size: 5
